@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": "./src",
-    "target": "ESNext",
+    "paths" : {
+      "@Hooks/*": ["./Hooks/*"],
+      "@Pages/*": ["./Pages/*"],
+    },
+    "target": "ES2016",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
@@ -10,13 +14,15 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
+    "module": "es6",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
-  },
+    "jsx": "react-jsx",
+    "types": [ "node" ],
+    "typeRoots": [ "../node_modules/@types" ]
+  },  
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
