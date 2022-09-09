@@ -4,6 +4,7 @@
     "paths" : {
       "@Hooks/*": ["./Hooks/*"],
       "@Pages/*": ["./Pages/*"],
+      "@Interfaces/*": ["./Interfaces/*"],
     },
     "target": "ES2016",
     "useDefineForClassFields": true,

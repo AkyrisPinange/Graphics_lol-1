@@ -7,6 +7,7 @@ export default defineConfig({
     alias: {
       '@Hooks': path.resolve(__dirname, 'src/Hooks'),
       '@Pages': path.resolve(__dirname, 'src/Pages'),
+      '@Interfaces': path.resolve(__dirname, 'src/Interfaces'),
     },
   },
   plugins: [react()],
