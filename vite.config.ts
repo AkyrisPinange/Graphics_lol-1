@@ -8,6 +8,7 @@ export default defineConfig({
       '@Hooks': path.resolve(__dirname, 'src/Hooks'),
       '@Pages': path.resolve(__dirname, 'src/Pages'),
       '@Interfaces': path.resolve(__dirname, 'src/Interfaces'),
+      '@Components': path.resolve(__dirname, 'src/Components'),
     },
   },
   plugins: [react()],

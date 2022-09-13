@@ -5,6 +5,7 @@
       "@Hooks/*": ["./Hooks/*"],
       "@Pages/*": ["./Pages/*"],
       "@Interfaces/*": ["./Interfaces/*"],
+      "@Components/*": ["./Components/*"]
     },
     "target": "ES2016",
     "useDefineForClassFields": true,
