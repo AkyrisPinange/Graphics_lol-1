@@ -1,8 +1,20 @@
 import {AppWrapper} from './Components/container';
-import Routes from './Routes';
+import Sidebar from './Components/sidebar/Sidebar';
+import React, {FC} from "react";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Home from './Components/pages/Home';
+import './App.css';
 
-export default function App () : JSX.Element {
-  return <AppWrapper>
-      <Routes />
-    </AppWrapper>
+
+const App: FC = () => {
+  return <>
+    <Router>
+    <Sidebar/>
+      <Routes>
+        <Route path="/graphs/summoners" element={<Home/>}></Route>
+      </Routes>
+    </Router>
+  </>
 }
+
+export default App;

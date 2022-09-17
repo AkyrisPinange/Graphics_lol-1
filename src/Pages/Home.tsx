@@ -15,6 +15,7 @@ export default function Home () : JSX.Element {
         const summonerObj : SummonerData = {
             puuid: puuid,
             name: summoner,
+            
         }
         const summonerData = await InsertData(summonerObj);
         console.log(summonerData);
